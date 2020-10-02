@@ -2,9 +2,9 @@
 EventBot is a bot for Discord written in Python using [discord.py](https://github.com/Rapptz/discord.py) that cycles the server image for special events and holidays.
 
 ## How To Use
-- Download a [release]() or [clone]() the repo
+- Download a [release](https://github.com/MiningMark48/EventBot/releases) or [clone](https://github.com/MiningMark48/EventBot/archive/master.zip) the repo
   - Extract files if necessary
-- Rename *demo_config.toml* to *config.toml*
+- Rename [*demo_config.toml*](https://github.com/MiningMark48/EventBot/blob/master/demo_config.toml) to *config.toml*
 - Put desired images in the *images* directory
 - In the config:
   - *Bot*
