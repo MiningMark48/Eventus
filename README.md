@@ -20,6 +20,9 @@ EventBot is a bot for Discord written in Python using [discord.py](https://githu
     - Set *date_end* to the date in which the icon will be reset to specified default
     - See [*demo_config.toml*](https://github.com/MiningMark48/EventBot/blob/master/demo_config.toml) for example usage
 
+### Things to note
+- If there are duplicate dates, it uses whatever was first and then stops
+- If an event starts on the same as another one ends, the server icon will reset to default and then an hour later (by default), it will be set to the new event's icon
 
 ## Todo
 - [x] Get working
