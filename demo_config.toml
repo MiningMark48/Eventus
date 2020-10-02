@@ -1,0 +1,24 @@
+[bot]
+token = "BOT_TOKEN_HERE"
+key = "e!"
+
+[settings]
+	server_id = 123123123123
+	default_image_name = "default.png"
+
+[events]
+
+	[events.fourth]
+		image_name = "fourth.png"
+		date_start = "07-03"
+		date_end = "07-05"
+
+	[events.halloween]
+		image_name = "halloween.png"
+		date_start = "10-20"
+		date_end = "11-01"
+
+	[events.christmas]
+		image_name = "christmas.png"
+		date_start = "12-10"
+		date_end = "01-01"
