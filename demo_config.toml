@@ -10,15 +10,15 @@ key = "e!"
 
 	[events.fourth]
 		image_name = "fourth.png"
-		date_start = "07-03"
-		date_end = "07-05"
+		date_start = "7-3"
+		date_end = "7-5"
 
 	[events.halloween]
 		image_name = "halloween.png"
 		date_start = "10-20"
-		date_end = "11-01"
+		date_end = "11-1"
 
 	[events.christmas]
 		image_name = "christmas.png"
 		date_start = "12-10"
-		date_end = "01-01"
+		date_end = "1-1"
