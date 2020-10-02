@@ -5,11 +5,12 @@ import asyncio
 import discord
 from discord.ext import commands
 
+from util.logger import Logger
 from util.decorators import delete_original
 from util.config import BotConfig
 
 
-class Utility(commands.Cog):
+class Background(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.config = BotConfig().data
@@ -22,11 +23,15 @@ class Utility(commands.Cog):
     #     print(self.config)
 
     async def set_icon(self, image_name):
-        guild = await self.bot.fetch_guild(self.config["settings"]["server_id"])
-        with open(f"images/{image_name}", 'rb') as f:
-            await guild.edit(icon=f.read())
-        self.prev_img = image_name
-        print("Set to: ", image_name)
+        try:
+            guild = await self.bot.fetch_guild(self.config["settings"]["server_id"])
+            with open(f"images/{image_name}", 'rb') as f:
+                Logger.info("Uploading image...")
+                await guild.edit(icon=f.read())
+            self.prev_img = image_name
+            Logger.info(f"\tSet to: {image_name}")
+        except FileNotFoundError:
+            Logger.fatal(f"File not found : {image_name} : Can't set image.")
 
     async def image_loop(self):
         await self.bot.wait_until_ready()
@@ -37,14 +42,14 @@ class Utility(commands.Cog):
         
         while True:
             today = datetime.datetime.today()
+            t_m = str(today.month) # Today month : str
+            t_d = str(today.day) # Today day : str
             
             for event in events:
                 event_info = events[event]
 
                 ds_m, ds_d = event_info["date_start"].split("-") # Date start month : str, date start day : str
                 de_m, de_d = event_info["date_end"].split("-") # Date end month : str, date end day : str
-                t_m = str(today.month) # Today month : str
-                t_d = str(today.day) # Today day : str
 
                 if (t_m, t_d) == (ds_m, ds_d): # If today is start
                     event_image = event_info["image_name"]
@@ -65,4 +70,4 @@ class Utility(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Utility(bot))
+    bot.add_cog(Background(bot))
