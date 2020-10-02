@@ -40,7 +40,7 @@ bot = commands.Bot(command_prefix=bot_key, intents=intents)
 async def on_ready():
     Logger.success(f"We have logged in as {bot.user}")
     await bot.change_presence(activity=discord.Activity(
-        name=f"Do {bot_key}help", type=discord.ActivityType.playing))
+        name=f"the calendar", type=discord.ActivityType.watching))
 
     Logger.success("Bot started in {} seconds".format(
         str(time.time() - start_time)[:4]))
