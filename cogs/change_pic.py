@@ -64,7 +64,7 @@ class Background(commands.Cog):
                     # Do nothing
                     pass
 
-            # print("Current Date:", datetime.datetime.today())
+            Logger.info(f"Current Date: {datetime.datetime.today()}")
 
             await asyncio.sleep(3600) # Every hour, sleep
 
