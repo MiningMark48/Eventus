@@ -1,12 +1,11 @@
+import time
+
 import discord
 from discord.ext import commands
 
-from util.extensions import get_extensions
-from util.help_command import HelpCommand
-from util.logger import Logger
 from util.config import BotConfig
-
-import time
+from util.extensions import get_extensions
+from util.logger import Logger
 
 start_time = time.time()
 

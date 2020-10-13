@@ -1,13 +1,10 @@
-import os
+import asyncio
 import datetime
 
-import asyncio
-import discord
 from discord.ext import commands
 
-from util.logger import Logger
-from util.decorators import delete_original
 from util.config import BotConfig
+from util.logger import Logger
 
 
 class Background(commands.Cog):

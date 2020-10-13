@@ -1,5 +1,7 @@
 import os.path as osp
+
 import toml
+
 
 def get_extensions():
     extensions_path = "extensions.toml"

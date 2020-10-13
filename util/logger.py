@@ -1,6 +1,7 @@
 import datetime
 import os
 
+
 class Colors:
     reset = '\033[0m'
     bold = '\033[01m'

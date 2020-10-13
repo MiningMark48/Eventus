@@ -1,4 +1,3 @@
-import discord
 from discord.ext import commands
 
 from util.decorators import delete_original
