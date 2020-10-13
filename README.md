@@ -1,4 +1,4 @@
-![Eventus Banner](.README_images/banner.png | width=512)
+![Eventus Banner](.README_images/banner.png)
 
 Eventus is a bot for Discord written in Python using [discord.py](https://github.com/Rapptz/discord.py) that cycles the server image for special events and holidays.
 
