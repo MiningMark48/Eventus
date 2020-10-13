@@ -6,7 +6,7 @@ Eventus is a bot for Discord written in Python using [discord.py](https://github
 - Download a [release](https://github.com/MiningMark48/EventBot/releases) or [clone](https://github.com/MiningMark48/EventBot/archive/master.zip) the repo
   - Extract files if necessary
 - Rename [*demo_config.toml*](https://github.com/MiningMark48/EventBot/blob/master/demo_config.toml) to *config.toml*
-- Put desired images in the *images* directory
+- Put desired images in the [*images*](https://github.com/MiningMark48/Eventus/tree/master/images) directory
 - In the config:
   - *Bot*
     - Set *token* to your [Discord application](https://discord.com/developers/applications) bot token
@@ -21,11 +21,11 @@ Eventus is a bot for Discord written in Python using [discord.py](https://github
     - Set *date_end* to the date in which the icon will be reset to specified default
     - See [*demo_config.toml*](https://github.com/MiningMark48/EventBot/blob/master/demo_config.toml) for example usage
 
-### Things to note
+### Things to Note
 - If there are duplicate dates, it uses whatever was first and then stops
 - If an event starts on the same as another one ends, the server icon will reset to default and then an hour later (by default), it will be set to the new event's icon
 
-## Todo
+### Todo
 - [x] Get working
 - [x] Use with Tidal Wave
 - [ ] Add support for multiple servers
