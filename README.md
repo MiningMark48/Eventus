@@ -1,5 +1,5 @@
-# EventBot
-EventBot is a bot for Discord written in Python using [discord.py](https://github.com/Rapptz/discord.py) that cycles the server image for special events and holidays.
+# Eventus
+Eventus is a bot for Discord written in Python using [discord.py](https://github.com/Rapptz/discord.py) that cycles the server image for special events and holidays.
 
 ## How To Use
 - Download a [release](https://github.com/MiningMark48/EventBot/releases) or [clone](https://github.com/MiningMark48/EventBot/archive/master.zip) the repo
@@ -26,4 +26,5 @@ EventBot is a bot for Discord written in Python using [discord.py](https://githu
 
 ## Todo
 - [x] Get working
+- [x] Use with Tidal Wave
 - [ ] Add support for multiple servers
